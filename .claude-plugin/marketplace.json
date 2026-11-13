@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "i-have-tbi",
+  "description": "Output shaping for readers living with the cognitive effects of a brain injury. Not medical advice.",
+  "owner": {
+    "name": "hamidasiblog"
+  },
+  "plugins": [
+    {
+      "name": "i-have-tbi",
+      "description": "Brain-injury-friendly output: the assistant carries the cognitive load.",
+      "source": "./",
+      "category": "accessibility"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "i-have-tbi",
+  "version": "0.1.0",
+  "description": "Shape output for a reader living with the cognitive effects of a brain injury: the assistant carries the load for memory, attention, executive function, processing speed, fatigue and social cues, one function at a time.",
+  "author": {
+    "name": "hamidasiblog",
+    "url": "https://github.com/hamidasiblog"
+  },
+  "homepage": "https://github.com/hamidasiblog/i-have-tbi",
+  "repository": "https://github.com/hamidasiblog/i-have-tbi",
+  "license": "MIT",
+  "keywords": [
+    "brain-injury",
+    "tbi",
+    "cognitive-accessibility",
+    "output-style",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "I Have TBI",
+    "shortDescription": "Brain-injury-friendly output: the assistant carries the cognitive load",
+    "longDescription": "Shape output for a reader living with the cognitive effects of a brain injury: the assistant carries the load for memory, attention, executive function, processing speed, fatigue and social cues, one function at a time.",
+    "developerName": "hamidasiblog",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/hamidasiblog/i-have-tbi",
+    "defaultPrompt": [
+      "Use i-have-tbi for this task.",
+      "Give me one step at a time and keep the state on screen.",
+      "Review this response against the i-have-tbi rules."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

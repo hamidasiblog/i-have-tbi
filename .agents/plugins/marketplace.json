@@ -1,0 +1,21 @@
+{
+  "name": "i-have-tbi",
+  "interface": {
+    "displayName": "I Have TBI"
+  },
+  "plugins": [
+    {
+      "name": "i-have-tbi",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hamidasiblog/i-have-tbi.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

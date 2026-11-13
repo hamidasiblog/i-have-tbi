@@ -1,0 +1,12 @@
+{
+  "name": "i-have-tbi",
+  "version": "0.1.0",
+  "description": "Shape output for a reader living with the cognitive effects of a brain injury: the assistant carries the load for memory, attention, executive function, processing speed, fatigue and social cues, one function at a time.",
+  "license": "MIT",
+  "homepage": "https://github.com/hamidasiblog/i-have-tbi",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "I Have TBI",
+    "shortDescription": "Brain-injury-friendly output: the assistant carries the cognitive load"
+  }
+}

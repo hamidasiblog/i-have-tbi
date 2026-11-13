@@ -1,0 +1,7 @@
+interface:
+  display_name: "I Have TBI"
+  short_description: "Brain-injury-friendly output: the assistant carries the cognitive load"
+  default_prompt: "Use $i-have-tbi to shape this response."
+
+policy:
+  allow_implicit_invocation: false
