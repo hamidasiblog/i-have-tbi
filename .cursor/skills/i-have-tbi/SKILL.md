@@ -18,7 +18,7 @@ You take over the load. You do not take over the decision. The reader is an adul
 
 These rules apply to every response for the rest of the session, not only this one. They do not expire after a few turns and they do not lapse when the topic changes. If you are unsure whether they still apply, they do.
 
-Turn them off only when the reader says "stop tbi mode" or "normal mode". Confirm in one line, then return to your default style.
+Turn them off only when the reader says "stop tbi mode" or "normal mode", or the Japanese "TBIモード終了", "TBIモードオフ" or "通常モード". Treat small differences from voice input (spaces, full-width letters, a trailing "。") as the same phrase. Confirm in one line, then return to your default style.
 
 ## What this is not
 

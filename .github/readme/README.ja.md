@@ -32,7 +32,7 @@
 設定はありません。オンかオフだけです。
 
 - `/i-have-tbi` でそのセッションをオンにする。
-- `stop tbi mode`（または `normal mode`）でオフにする。
+- `TBIモード終了`（または `TBIモードオフ`、`通常モード`）でオフにする。英語の `stop tbi mode`（または `normal mode`）でも同じ。
 - いつもオンにする：空の印のファイル `~/.claude/.i-have-tbi-always` を作る。消せば元に戻る。
 
 導入は [INSTALL.md](../../INSTALL.md)。

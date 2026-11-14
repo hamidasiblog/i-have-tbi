@@ -26,7 +26,31 @@ const RULES_MESSAGE_TYPE = "i-have-tbi-rules";
 const DISABLED_MESSAGE_TYPE = "i-have-tbi-disabled";
 const STATUS_KEY = "i-have-tbi";
 const DISABLE_CONFIRMATION = "TBI mode disabled.";
-const STOP_PHRASES = new Set(["stop tbi mode", "normal mode"]);
+const STOP_PHRASES = new Set([
+  "stop tbi mode",
+  "normal mode",
+  // Japanese. Stored without spaces; see normalizeInput.
+  "tbiモード終了",
+  "tbiモードオフ",
+  "通常モード",
+]);
+
+// Voice input can add full-width letters, extra spaces or a trailing "。".
+// NFKC folds full-width letters (ＴＢＩ -> TBI) before lowercasing.
+function normalizeInput(text: string): string {
+  return text
+    .normalize("NFKC")
+    .trim()
+    .toLowerCase()
+    .replace(/[\s。．.！!]+$/u, "")
+    .replace(/\s+/gu, " ");
+}
+
+function isStopPhrase(text: string): boolean {
+  const input = normalizeInput(text);
+  return STOP_PHRASES.has(input) || STOP_PHRASES.has(input.replace(/ /g, ""));
+}
+
 const RULES_HEADER =
   'TBI MODE ACTIVE. The ruleset below applies to every response until turned off. "stop tbi mode" or "normal mode" turns it off for this session.';
 const DISABLED_NOTICE =
@@ -220,7 +244,7 @@ export default function iHaveTbiExtension(pi: ExtensionAPI) {
       return { action: "handled" };
     }
 
-    if (enabled && STOP_PHRASES.has(input)) {
+    if (enabled && isStopPhrase(event.text)) {
       setEnabled(false, ctx);
 
       if (ctx.hasUI) {

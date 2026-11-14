@@ -20,6 +20,7 @@ Restart Claude Code.
 ```text
 /i-have-tbi          turn on for this session
 stop tbi mode       turn off for this session ("normal mode" also works)
+TBIモード終了        same, in Japanese ("TBIモードオフ" and "通常モード" also work)
 ```
 
 ### Always-on (optional)

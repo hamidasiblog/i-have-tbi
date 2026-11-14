@@ -32,7 +32,7 @@ Do not read secrets, home-directory configuration, unrelated files, or local run
 The only mechanism is on/off.
 
 - On for a session: `/i-have-tbi`.
-- Off for a session: the reader says "stop tbi mode" or "normal mode".
+- Off for a session: the reader says "stop tbi mode" or "normal mode", or in Japanese "TBIモード終了", "TBIモードオフ" or "通常モード".
 - Always on: the empty flag file `.i-have-tbi-always` in the runtime's config directory (`~/.claude/` for Claude Code). Delete it to return to on-demand.
 
 Do not add levels, profiles, or per-rule settings.
