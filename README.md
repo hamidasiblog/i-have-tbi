@@ -32,7 +32,7 @@ Full text: [skills/i-have-tbi/SKILL.md](./skills/i-have-tbi/SKILL.md). It is one
 There is no configuration. The skill is on or off.
 
 - `/i-have-tbi` turns it on for the session.
-- `stop tbi mode` (or `normal mode`) turns it off.
+- `stop tbi mode` (or `normal mode`) turns it off. Japanese also works: `TBIモード終了`, `TBIモードオフ` or `通常モード`.
 - Always on: create the empty flag file `~/.claude/.i-have-tbi-always`. Delete the file to go back to on-demand.
 
 See [INSTALL.md](INSTALL.md).
